@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test-class Suite" parallel="tests" thread-count="2">
+	
+<!-- Scenario 1-->
+	<test name="Test-class test 1">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+		<class name="com.azmqalabs.edaattestautomation.testscripts.biller.BillerAddIndividualClient"/>
+		</classes>
+	</test>
+	
+<!-- Scenario 2-->
+	<test name="Test-class test 2">
+		<parameter name="test-name" value="test-method" />
+		<classes>
+			<class name="com.azmqalabs.edaattestautomation.testscripts.biller.BillerIndividualClientSearch"/>
+			<class name="com.azmqalabs.edaattestautomation.testscripts.biller.BillerDeleteIndividualClient"/>
+		</classes>
+	</test>
+</suite>
